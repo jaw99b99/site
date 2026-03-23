@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio MMI - Jules Weijers - BUT Métiers du Multimédia et de l'Internet">
+    <title>Portfolio MMI - Jules Weijers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo"><img src="assets/images/logo J.png" width="100px"
+                    alt="logo Jules Weijers"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="index.html#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="portfolio-mmi.html" data-i18n="nav_mmi">Portfolio MMI</a></li>
+                <li><a href="jawprod.html" data-i18n="nav_jawprod">Jaw Prod</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="nl">NL</button>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="subtitle" data-i18n="mmi_hero_subtitle">BUT MMI · Academic Portfolio</h2>
+                <h1 class="title">
+                    <span data-i18n="mmi_hero_title_part1">Portfolio</span><br>
+                    <span class="gradient-text" data-i18n="mmi_hero_title_part2">MMI</span>
+                </h1>
+                <p class="description" data-i18n="mmi_hero_desc">A collection of academic projects developed during my
+                    BUT Métiers du Multimédia et de l'Internet degree, covering the 5 core competencies.</p>
+                <div class="cta-group">
+                    <a href="index.html" class="btn btn-secondary" data-i18n="btn_back">Back to Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-placeholder glass-card"
+                    style="display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+                    <span class="gradient-text" style="font-size: 2.5rem; font-weight: 800; margin: 0;">BUT MMI</span>
+                    <p style="color: var(--text-secondary); font-size: 1rem; text-align: center; padding: 0 1.5rem;"
+                        data-i18n="mmi_hero_badge">Métiers du Multimédia et de l'Internet</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MMI Competencies Portfolio -->
+        <section id="mmi-portfolio" class="portfolio-section">
+            <h2 class="section-title" data-i18n="mmi_portfolio_title">Academic Projects</h2>
+
+            <div class="mmi-competency-intro glass-card"
+                style="padding: 2rem; margin-bottom: 3rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 3rem;">
+                <p style="color: var(--text-secondary); font-size: 1.05rem;" data-i18n="mmi_intro_desc">The BUT MMI
+                    programme is structured around 5 core competencies: Understand, Design, Express, Develop, and
+                    Manage. Each project below demonstrates one of these skills.</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="comprendre"
+                    data-i18n="mmi_filter_comprendre">Understand</button>
+                <button class="filter-btn" data-filter="concevoir" data-i18n="mmi_filter_concevoir">Design</button>
+                <button class="filter-btn" data-filter="exprimer" data-i18n="mmi_filter_exprimer">Express</button>
+                <button class="filter-btn" data-filter="developper" data-i18n="mmi_filter_developper">Develop</button>
+                <button class="filter-btn" data-filter="entreprendre"
+                    data-i18n="mmi_filter_entreprendre">Manage</button>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <!-- Comprendre: Iron Maiden vs SOAD Benchmark -->
+                <div class="portfolio-item" data-category="comprendre">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <img src="assets/images/comprendre_benchmark.png" alt="Iron Maiden vs SOAD Benchmark"
+                                class="portfolio-image">
+                        </div>
+                        <div class="item-content">
+                            <span class="mmi-tag" data-i18n="mmi_filter_comprendre">Understand</span>
+                            <h3 data-i18n="project_benchmark_title">Iron Maiden vs SOAD Benchmark</h3>
+                            <p data-i18n="project_benchmark_desc">A detailed UI/UX and communication strategy comparison
+                                between two iconic metal bands' websites, including persona creation.</p>
+                            <div style="display:flex;gap:0.75rem;margin-top:1rem;flex-wrap:wrap;">
+                                <a href="mmi-comprendre.html" class="btn btn-primary"
+                                    style="font-size:0.85rem;padding:0.5rem 1.2rem;" data-i18n="comp_view_detail">View
+                                    Details ↗</a>
+                                <a href="https://docs.google.com/document/d/e/2PACX-1vTKXPt67hCRyLNYmqkDiwPlftgI4cMNOzq5Qq594efZ0VhWEkvWonY3-5DiGSTiMGNLSEG3dka_bvBa/pub"
+                                    target="_blank" class="btn btn-secondary"
+                                    style="font-size:0.85rem;padding:0.5rem 1.2rem;" data-i18n="mmi_btn_view_doc">View
+                                    Full Document ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concevoir: Binko Launch Strategy -->
+                <div class="portfolio-item" data-category="concevoir">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <img src="assets/images/concevoir_strategy.png" alt="Binko Launch Strategy" class="portfolio-image">
+                        </div>
+                        <div class="item-content">
+                            <span class="mmi-tag" data-i18n="mmi_filter_concevoir">Design</span>
+                            <h3 data-i18n="project_binko_title">"Binko" Product Launch Strategy</h3>
+                            <p data-i18n="project_binko_desc">Team project: full digital communication strategy and
+                                planning for an innovative product launch, including an oral pitch.</p>
+                            <a href="mmi-concevoir.html" class="btn btn-primary"
+                                style="margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem;"
+                                data-i18n="comp_view_detail">View Details ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exprimer: Production audio & visuelle -->
+                <div class="portfolio-item" data-category="exprimer">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <img src="assets/images/exprimer_camera.png" alt="Jules en cours de production audio et vidéo"
+                                class="portfolio-image">
+                        </div>
+                        <div class="item-content">
+                            <span class="mmi-tag" data-i18n="mmi_filter_exprimer">Express</span>
+                            <h3 data-i18n="project_exprimer_title">Production Audio &amp; Visuelle</h3>
+                            <p data-i18n="project_exprimer_desc">Audio/video production, visual communication design (MAHA poster), and audiovisual storytelling with a note d'intention.</p>
+                            <a href="mmi-exprimer.html" class="btn btn-primary" style="margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem;" data-i18n="comp_view_detail">View Details ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio-item" data-category="developper">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <img src="assets/images/developper_parodiapedia.png"
+                                alt="Parodiapédia – site internet" class="portfolio-image" style="object-position:top;">
+                        </div>
+                        <div class="item-content">
+                            <span class="mmi-tag" data-i18n="mmi_filter_developper">Develop</span>
+                            <h3 data-i18n="project_developper_title">Parodiapédia &amp; Web Development</h3>
+                            <p data-i18n="project_developper_desc">Hand-coded websites in HTML5 &amp; CSS3, including a parody Wikipedia interface and "The Social Network" static site.</p>
+                            <a href="mmi-developper.html" class="btn btn-primary"
+                                style="margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem;"
+                                data-i18n="comp_view_detail">View Details ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entreprendre: Blois Tourist Office Redesign -->
+                <div class="portfolio-item" data-category="entreprendre">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <img src="assets/images/entreprendre_blois.png"
+                                alt="Blois Tourist Office Redesign" class="portfolio-image">
+                        </div>
+                        <div class="item-content">
+                            <span class="mmi-tag" data-i18n="mmi_filter_entreprendre">Manage</span>
+                            <h3 data-i18n="project_blois_title">Blois Tourist Office Redesign</h3>
+                            <p data-i18n="project_blois_desc">Group project management: full scoping document for a
+                                website redesign with budget planning for the Blois-Chambord Tourist Office.</p>
+                            <a href="mmi-entreprendre.html" class="btn btn-primary"
+                                style="margin-top:1rem;font-size:0.85rem;padding:0.5rem 1.2rem;"
+                                data-i18n="comp_view_detail">View Details ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span data-i18n="footer_text">Designed and built by Jules Weijers</span> &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

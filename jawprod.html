@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jaw Prod - A creative venture by Jules Weijers">
+    <title>Jaw Prod</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Jules A. Weijers Productions</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="index.html#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="portfolio-mmi.html" data-i18n="nav_mmi">Portfolio MMI</a></li>
+                <li><a href="jawprod.html" data-i18n="nav_jawprod">Jaw Prod</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="nl">NL</button>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="subtitle" data-i18n="jawprod_hero_subtitle">Creative Venture</h2>
+                <h1 class="title">
+                    <span data-i18n="jawprod_hero_title_part1">Jaw</span><br>
+                    <span class="gradient-text" data-i18n="jawprod_hero_title_part2">Prod</span>
+                </h1>
+                <p class="description" data-i18n="jawprod_hero_desc">Films, digital creation, and multimedia production
+                    agency.</p>
+                <div class="cta-group">
+                    <a href="index.html" class="btn btn-secondary" data-i18n="btn_back">Back to Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-placeholder glass-card"
+                    style="display: flex; align-items: center; justify-content: center;">
+                    <!-- Placeholder logo or image for Jaw Prod -->
+                    <h2 class="gradient-text" style="font-size: 3rem; margin: 0;">Jaw Prod</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title" data-i18n="jawprod_about_title">About Jaw Prod</h2>
+            <div class="about-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <div class="about-text glass-card">
+                    <h3 data-i18n="jawprod_about_subtitle">The Vision</h3>
+                    <p data-i18n="jawprod_about_desc">Jaw Prod is a creative venture focusing on film production,
+                        multimedia solutions, and digital creation. We aim to bring stories to life through compelling
+                        visuals and modern technology.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span data-i18n="footer_text">Designed and built by Jules Weijers</span> &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

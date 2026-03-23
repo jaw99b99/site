@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Jules Weijers - Multimedia, Movies, Design, and Webdesign">
+    <title>jules weijers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo"><img src="assets/images/logo J.png" width="100px"
+                    alt="logo Jules Weijers"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                <li><a href="index.html#portfolio" data-i18n="nav_portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="portfolio-mmi.html" data-i18n="nav_mmi">Portfolio MMI</a></li>
+                <li><a href="jawprod.html" data-i18n="nav_jawprod">Jaw Prod</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="nl">NL</button>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h2 class="subtitle" data-i18n="hero_subtitle">BUT MMI Student | Filmmaker | Entrepreneur | Musician
+                </h2>
+                <h1 class="title">
+                    <span data-i18n="hero_title_part1">Crafting</span><br>
+                    <span class="gradient-text" data-i18n="hero_title_part2">Digital Experiences</span>
+                </h1>
+                <p class="description" data-i18n="hero_desc">Specializing in movies, graphic design, and modern web
+                    solutions.</p>
+                <div class="cta-group">
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="btn_work">View My Work</a>
+                    <a href="assets/cv/CV Jules Weijers english.pdf" class="btn btn-secondary" target="_blank" download
+                        data-i18n="btn_cv">Download my CV</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Replace src with an actual photo of Jules -->
+                <div class="visual-placeholder glass-card">
+                    <img src="assets/images/JulesTS.jpeg" width="100%" alt="Jules Weijers" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title" data-i18n="about_title">Who Am I?</h2>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <h3 data-i18n="about_studies_title">My Background</h3>
+                    <p data-i18n="about_studies_desc">I am a student in BUT Métiers du Multimédia et de l'Internet
+                        (MMI). Beyond my studies, I am a passionate filmmaker, an entrepreneur, and a musician. My
+                        diverse background allows me to approach digital creation from multiple artistic and technical
+                        angles.</p>
+                </div>
+                <div class="about-text glass-card">
+                    <h3 data-i18n="about_skills_title">My Skills</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-name" data-i18n="skill_movies">Movies & Video Editing</span> <span
+                                class="skill-bar">
+                                <div class="fill" style="width: 95%"></div>
+                            </span></li>
+                        <li><span class="skill-name" data-i18n="skill_design">Design & Brand Identity</span> <span
+                                class="skill-bar">
+                                <div class="fill" style="width: 85%"></div>
+                            </span></li>
+                        <li><span class="skill-name" data-i18n="skill_web">Web Design (UI/UX)</span> <span
+                                class="skill-bar">
+                                <div class="fill" style="width: 80%"></div>
+                            </span></li>
+                        <li><span class="skill-name" data-i18n="skill_music">Music Production</span> <span
+                                class="skill-bar">
+                                <div class="fill" style="width: 75%"></div>
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2 class="section-title" data-i18n="portfolio_title">Featured Projects</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="movies" data-i18n="filter_movies">Movies</button>
+                <button class="filter-btn" data-filter="webdesign" data-i18n="filter_webdesign">Webdesign</button>
+                <button class="filter-btn" data-filter="photo" data-i18n="filter_photo">Photos</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Movie Project -->
+                <div class="portfolio-item" data-category="movies">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <video src="assets/video/court métrage 1.mp4" autoplay loop muted playsinline
+                                class="portfolio-image"></video>
+                        </div>
+                        <div class="item-content">
+                            <h3 data-i18n="project_pepite_title">Short Film "Pépite"</h3>
+                            <p data-i18n="project_pepite_desc">A short film project demonstrating storytelling and
+                                cinematography.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Securi-Vie Web Design Project -->
+                <div class="portfolio-item" data-category="webdesign">
+                    <div class="glass-card item-card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
+                                alt="Securi-Vie UI" class="portfolio-image">
+                        </div>
+                        <div class="item-content">
+                            <h3 data-i18n="project_web_securivie_title">Securi-Vie Website</h3>
+                            <br>
+                            <a class="btn btn-primary" href="https://www.securi-vie.fr/" target="_blank"
+                                data-i18n="button_securivie" style="margin-top: 0.5rem;">Show the website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio MMI CTA card -->
+                <div class="portfolio-item" data-category="all-pages">
+                    <a href="portfolio-mmi.html" class="glass-card item-card mmi-cta-card"
+                        style="text-decoration: none; display: block;">
+                        <div class="item-content" style="padding: 2.5rem; text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">&#127891;</div>
+                            <h3 class="gradient-text" data-i18n="mmi_cta_title">Portfolio MMI</h3>
+                            <p style="color: var(--text-secondary); margin-top: 0.75rem;" data-i18n="mmi_cta_desc">See
+                                all my academic projects from BUT MMI &mdash; Benchmark, Strategy, Film, Dev &amp; more.
+                            </p>
+                            <span class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;"
+                                data-i18n="mmi_cta_btn">View MMI Portfolio &#8599;</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item" data-category="photo">
+                    <div class="glass-card item-card">
+                        <div class="item-img carousel-container">
+                            <div class="carousel-track">
+                                <img src="assets/images/mer.png" alt="mer"
+                                    class="portfolio-image carousel-slide active">
+                                <img src="assets/images/Bloisruejour.png" alt="rue de Blois le jour"
+                                    class="portfolio-image carousel-slide">
+                                <img src="assets/images/exprimer_camera.png" alt="illusion de grandeur"
+                                    class="portfolio-image carousel-slide">
+                                <img src="assets/images/IMG_8677.jpeg" alt="ruelle étroite de Blois"
+                                    class="portfolio-image carousel-slide">
+                            </div>
+                            <button class="carousel-btn prev-btn">&#10094;</button>
+                            <button class="carousel-btn next-btn">&#10095;</button>
+                            <div class="carousel-dots">
+                                <span class="dot active" data-slide="0"></span>
+                                <span class="dot" data-slide="1"></span>
+                                <span class="dot" data-slide="2"></span>
+                                <span class="dot" data-slide="3"></span>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <span class="mmi-tag" data-i18n="filter_photo">Photos</span>
+                            <h3 data-i18n="project_photo_title">Photos</h3>
+                            <p data-i18n="project_photo_desc">Picture taken in the streets of Blois, Fouras and in
+                                class.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title" data-i18n="contact_title">Let's Connect</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3 data-i18n="contact_info_title">Get In Touch</h3>
+                    <p data-i18n="contact_desc">I'm currently looking for a 2-year work-study (apprenticeship) starting
+                        September 2026. Whether you have a question, a project, or just want to say hi, I'll try my best
+                        to get back to you!</p>
+                    <div class="contact-links">
+                        <a href="mailto:weijers.jules@icloud.com" class="contact-link">weijers.jules@icloud.com</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/jules.weijers/" target="_blank" class="social-link"
+                            title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@jawprod" target="_blank" class="social-link" title="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/julesweijers" target="_blank" class="social-link" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jules-weijers/" target="_blank" class="social-link"
+                            title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form glass-card">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="form_subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span data-i18n="footer_text">Designed and built by Jules Weijers</span> &copy; <span id="year"></span></p>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
