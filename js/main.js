@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Set current year
-  document.getElementById('year').textContent = new Date().getFullYear();
+  const yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 
   // --- Mobile Navigation Toggle ---
   const hamburger = document.querySelector('.hamburger');
@@ -24,22 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const langBtns = document.querySelectorAll('.lang-btn');
   const i18nElements = document.querySelectorAll('[data-i18n]');
 
+  const i18n = (typeof translations !== 'undefined') ? translations : (window.translations || {});
+
   const setLanguage = (lang) => {
+    const dict = i18n[lang];
+    if (!dict) return;
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
-      if (translations && translations[lang] && translations[lang][key]) {
+      if (dict[key]) {
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.placeholder = translations[lang][key];
+          el.placeholder = dict[key];
         } else {
-          el.textContent = translations[lang][key];
+          el.textContent = dict[key];
         }
       }
     });
 
     // Update dynamic CV Link
     const cvLink = document.querySelector('a[download]');
-    if(cvLink && translations && translations[lang] && translations[lang].cv_url) {
-        cvLink.href = translations[lang].cv_url;
+    if (cvLink && dict.cv_url) {
+        cvLink.href = dict.cv_url;
     }
 
     document.querySelectorAll('.lang-btn').forEach(btn => {

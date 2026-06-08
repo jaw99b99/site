@@ -534,3 +534,7 @@ const translations = {
     bb_view_doc: "Bekijk het Strategiedossier ↗"
   }
 };
+
+if (typeof window !== 'undefined') {
+  window.translations = translations;
+}
