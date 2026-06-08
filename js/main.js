@@ -29,6 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const i18n = (typeof translations !== 'undefined') ? translations : (window.translations || {});
 
+  // localStorage can throw (private mode, blocked cookies); never let it break switching
+  const storage = {
+    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } },
+  };
+
   const setLanguage = (lang) => {
     const dict = i18n[lang];
     if (!dict) return;
@@ -55,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Save preference
-    localStorage.setItem('portfolio_lang', lang);
+    storage.set('portfolio_lang', lang);
   };
 
   // Check for saved language or browser default
-  const savedLang = localStorage.getItem('portfolio_lang');
+  const savedLang = storage.get('portfolio_lang');
   const userLang = navigator.language.slice(0, 2);
   const defaultLang = savedLang || (['en', 'fr', 'nl'].includes(userLang) ? userLang : 'en');
   
@@ -119,18 +125,19 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       
       // Get current language for messages
-      const currentLang = localStorage.getItem('portfolio_lang') || 'en';
-      
+      const currentLang = storage.get('portfolio_lang') || 'en';
+      const msgs = i18n[currentLang] || {};
+
       // Show sending state
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.textContent;
-      submitBtn.textContent = translations[currentLang].msg_sending || 'Sending...';
+      submitBtn.textContent = msgs.msg_sending || 'Sending...';
       submitBtn.disabled = true;
 
       // Simulate API call
       setTimeout(() => {
         // Success
-        formStatus.textContent = translations[currentLang].msg_success || 'Message sent!';
+        formStatus.textContent = msgs.msg_success || 'Message sent!';
         formStatus.className = 'form-status success';
         
         // Reset form
