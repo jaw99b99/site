@@ -29,11 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const i18n = (typeof translations !== 'undefined') ? translations : (window.translations || {});
 
-  // localStorage can throw (private mode, blocked cookies); never let it break switching
-  const storage = {
-    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* ignore */ } },
-  };
+  // In-memory language preference (no persistent browser storage so the site
+  // runs inside sandboxed preview iframes that block localStorage et al.)
+  let currentLang = null;
 
   const setLanguage = (lang) => {
     const dict = i18n[lang];
@@ -60,14 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
     
-    // Save preference
-    storage.set('portfolio_lang', lang);
+    // Save preference (in-memory only)
+    currentLang = lang;
   };
 
   // Check for saved language or browser default
-  const savedLang = storage.get('portfolio_lang');
   const userLang = navigator.language.slice(0, 2);
-  const defaultLang = savedLang || (['en', 'fr', 'nl'].includes(userLang) ? userLang : 'en');
+  const defaultLang = currentLang || (['en', 'fr', 'nl'].includes(userLang) ? userLang : 'en');
   
   setLanguage(defaultLang);
 
@@ -125,8 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       
       // Get current language for messages
-      const currentLang = storage.get('portfolio_lang') || 'en';
-      const msgs = i18n[currentLang] || {};
+      const msgs = i18n[currentLang || 'en'] || {};
 
       // Show sending state
       const submitBtn = contactForm.querySelector('button[type="submit"]');

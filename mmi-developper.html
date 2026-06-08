@@ -146,21 +146,98 @@
                 </div>
             </div>
 
-            <!-- Fleuriste project showcase -->
-            <div style="margin-top: 2.5rem;">
+            <!-- SAÉ 203 — Focus jury : preuve de la compétence Développer -->
+            <div style="margin-top: 3.5rem;">
+                <h2 class="section-title" data-i18n="sae_title">Focus SAÉ 203 — Prouver que je sais développer</h2>
+
+                <!-- 1. Présentation du projet -->
                 <div class="about-grid">
                     <div class="about-text glass-card">
-                        <h3 data-i18n="comp_developper_fleur_title">Site fictionnel d'un fleuriste sur Blois</h3>
-                        <p data-i18n="comp_developper_fleur_desc">Ce site a été fait en groupe de 2. Nous l'avons fait
-                            en Javascript, HTML et CSS. Ceci était pour un projet étudiant où nous devions faire un site
-                            internet avec une base de données.</p>
-                        <p style="margin-top:0.75rem;color:var(--text-secondary);font-size:0.92rem;">Réalisé avec
-                            <strong>HTML5</strong>, <strong>CSS3</strong> &amp; <strong>JavaScript</strong>, avec une
-                            base de données pour la gestion du contenu.</p>
+                        <span class="mmi-tag" data-i18n="sae_step_project">1 · Présentation du projet</span>
+                        <h3 style="margin-top:0.75rem;" data-i18n="sae_fleur_title">Site fictif d'un fleuriste mariage à Blois</h3>
+                        <p data-i18n="sae_fleur_intro">Dans le cadre de la SAÉ 203 (Intégration), j'ai réalisé, en binôme avec un camarade de promo, un site web fictif pour un fleuriste spécialisé dans les mariages à Blois. Le brief : intégrer une maquette en un site fonctionnel codé entièrement en HTML, CSS et JavaScript, sans framework.</p>
+                        <p style="margin-top:0.75rem;color:var(--text-secondary);font-size:0.95rem;" data-i18n="sae_fleur_pages">Le site s'articule autour de deux pages principales : une page d'accueil (présentation, vitrine, newsletter, localisation) et une fiche produit détaillée (bouquet avec ajout au panier).</p>
                     </div>
                     <div class="glass-card" style="overflow:hidden;border-radius:16px;padding:0;">
-                        <img src="assets/images/SAE.png" alt="Screenshot du site du fleuriste de Blois"
+                        <img src="assets/images/SAE.png" alt="Capture d'écran du site fictif du fleuriste de Blois"
                             style="width:100%;object-fit:cover;object-position:top;display:block;border-radius:16px;min-height:260px;">
+                    </div>
+                </div>
+
+                <!-- 2. Compétence DÉVELOPPER ciblée -->
+                <div class="about-grid" style="margin-top: 2rem;">
+                    <div class="about-text glass-card">
+                        <span class="mmi-tag" data-i18n="sae_step_comp">2 · Compétence ciblée</span>
+                        <h3 style="margin-top:0.75rem;" data-i18n="sae_comp_title">La compétence « Développer »</h3>
+                        <p data-i18n="sae_comp_desc">Cette réalisation cible directement la compétence <strong>Développer</strong> : concevoir et produire une application ou un site web. Elle mobilise les ressources d'intégration web (HTML/CSS), de programmation (JavaScript) et la SAÉ 203 « Intégration ».</p>
+                        <ul class="skills-list" style="margin-top:1rem;">
+                            <li style="margin-bottom:0.5rem;color:var(--text-secondary);"><span class="skill-name" data-i18n="sae_ac1">AC : intégrer du contenu dans une interface web structurée et sémantique.</span></li>
+                            <li style="margin-bottom:0.5rem;color:var(--text-secondary);"><span class="skill-name" data-i18n="sae_ac2">AC : maîtriser la mise en page (Flexbox, Grid) et le positionnement.</span></li>
+                            <li style="margin-bottom:0.5rem;color:var(--text-secondary);"><span class="skill-name" data-i18n="sae_ac3">AC : ajouter de l'interactivité côté client avec JavaScript.</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-text glass-card">
+                        <span class="mmi-tag" data-i18n="sae_step_process">3 · Démarche de travail</span>
+                        <h3 style="margin-top:0.75rem;" data-i18n="sae_process_title">Du besoin au site fonctionnel</h3>
+                        <p data-i18n="sae_process_desc">Nous avons d'abord analysé le besoin (un fleuriste qui veut présenter ses bouquets et collecter des contacts), puis fait nos choix techniques : HTML/CSS/JS purs pour rester proches du langage, sans dépendance externe.</p>
+                        <ol style="margin:1rem 0 0 1.2rem;color:var(--text-secondary);font-size:0.98rem;line-height:1.9;">
+                            <li data-i18n="sae_process_1">Structuration sémantique des deux pages en HTML5.</li>
+                            <li data-i18n="sae_process_2">Mise en page responsive avec Flexbox et CSS Grid.</li>
+                            <li data-i18n="sae_process_3">Ajout des interactions JavaScript (newsletter, panier).</li>
+                            <li data-i18n="sae_process_4">Tests manuels dans le navigateur et corrections.</li>
+                        </ol>
+                        <p style="margin-top:0.75rem;color:var(--text-secondary);font-size:0.92rem;" data-i18n="sae_tools">Outils : VS Code, navigateur (outils développeur), Git.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Preuves concrètes -->
+                <div style="margin-top: 2rem;">
+                    <div class="about-text glass-card">
+                        <span class="mmi-tag" data-i18n="sae_step_proof">4 · Preuves techniques concrètes</span>
+                        <h3 style="margin-top:0.75rem;" data-i18n="sae_proof_title">Ce que j'ai codé moi-même</h3>
+                        <div class="about-grid" style="margin-top:1rem;">
+                            <ul class="skills-list" style="margin-top:0;">
+                                <li style="margin-bottom:0.9rem;color:var(--text-secondary);"><strong style="color:var(--text-primary);" data-i18n="sae_proof_1_t">En-tête fixe (sticky header)</strong><br><span data-i18n="sae_proof_1_d">Navigation qui reste visible au défilement via CSS position.</span></li>
+                                <li style="margin-bottom:0.9rem;color:var(--text-secondary);"><strong style="color:var(--text-primary);" data-i18n="sae_proof_2_t">Grille de produits (Grid / Flexbox)</strong><br><span data-i18n="sae_proof_2_d">Les bouquets sont disposés dans une grille qui se réorganise selon la largeur.</span></li>
+                                <li style="margin-bottom:0.9rem;color:var(--text-secondary);"><strong style="color:var(--text-primary);" data-i18n="sae_proof_3_t">Hero avec overlay</strong><br><span data-i18n="sae_proof_3_d">Image d'accueil avec un calque dégradé pour la lisibilité du texte.</span></li>
+                            </ul>
+                            <ul class="skills-list" style="margin-top:0;">
+                                <li style="margin-bottom:0.9rem;color:var(--text-secondary);"><strong style="color:var(--text-primary);" data-i18n="sae_proof_4_t">Adresse Google Maps en overlay</strong><br><span data-i18n="sae_proof_4_d">Carte intégrée avec l'adresse de la boutique superposée.</span></li>
+                                <li style="margin-bottom:0.9rem;color:var(--text-secondary);"><strong style="color:var(--text-primary);" data-i18n="sae_proof_5_t">Newsletter en JavaScript</strong><br><span data-i18n="sae_proof_5_d">Champ e-mail relié par addEventListener pour réagir à l'inscription.</span></li>
+                                <li style="margin-bottom:0.9rem;color:var(--text-secondary);"><strong style="color:var(--text-primary);" data-i18n="sae_proof_6_t">Bouton « Ajouter au panier »</strong><br><span data-i18n="sae_proof_6_d">Le bouton change de couleur et d'état au clic pour confirmer l'action.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Analyse critique -->
+                <div class="about-grid" style="margin-top: 2rem;">
+                    <div class="about-text glass-card">
+                        <span class="mmi-tag" data-i18n="sae_step_analysis">5 · Analyse critique</span>
+                        <h3 style="margin-top:0.75rem;color:#43e97b;" data-i18n="sae_strong_title">Ce qui fonctionne</h3>
+                        <ul style="margin:0.5rem 0 0 1.2rem;color:var(--text-secondary);line-height:1.8;">
+                            <li data-i18n="sae_strong_1">Les deux pages sont fonctionnelles et codées à la main.</li>
+                            <li data-i18n="sae_strong_2">La mise en page tient grâce à Flexbox et Grid.</li>
+                            <li data-i18n="sae_strong_3">Les interactions clés (newsletter, panier) répondent au clic.</li>
+                        </ul>
+                    </div>
+                    <div class="about-text glass-card">
+                        <h3 style="margin-top:0.75rem;color:#ff6b6b;" data-i18n="sae_limit_title">Limites et axes d'amélioration</h3>
+                        <ul style="margin:0.5rem 0 0 1.2rem;color:var(--text-secondary);line-height:1.8;">
+                            <li data-i18n="sae_limit_1">Le site n'est pas encore totalement responsive sur mobile.</li>
+                            <li data-i18n="sae_limit_2">Des fonctionnalités attendues manquent (panneau cookies, etc.).</li>
+                            <li data-i18n="sae_limit_3">Le JavaScript reste simple et fragile par endroits.</li>
+                            <li data-i18n="sae_limit_4">À améliorer : responsive, validation des champs, accessibilité, structure du JS.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6. Conclusion orientée oral -->
+                <div style="margin-top: 2rem;">
+                    <div class="about-text glass-card">
+                        <span class="mmi-tag" data-i18n="sae_step_conclusion">6 · Conclusion</span>
+                        <h3 style="margin-top:0.75rem;" data-i18n="sae_conclusion_title">Pourquoi cette réalisation prouve que je sais développer</h3>
+                        <p data-i18n="sae_conclusion_desc">Au-delà du rendu visuel, ce projet montre que je suis capable de partir d'un besoin, de faire des choix techniques et de produire un site fonctionnel en HTML, CSS et JavaScript. Je sais aussi porter un regard critique sur mon travail : identifier ce qui marche, ce qui reste fragile, et ce que je dois progresser. C'est cette démarche — réaliser, analyser, améliorer — qui montre que j'acquiers la compétence Développer.</p>
                     </div>
                 </div>
             </div>
