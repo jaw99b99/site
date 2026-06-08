@@ -162,7 +162,20 @@ const translations = {
     comp_ent_break: "Break-even analysis",
     comp_entreprendre_result_title: "What I Learned",
     comp_entreprendre_result_desc: "Knowing how to manage a project also means knowing how to communicate clearly and visually. Entrepreneurship is about turning vision into reality, step by step.",
-    comp_ent_view_doc: "View Scoping Document ↗"
+    comp_ent_view_doc: "View Scoping Document ↗",
+    bb_section_title: "The BlackBerry Project — Strategic Comeback",
+    bb_context_title: "Context & Objective",
+    bb_context_desc: "Working in a creation trio (MMI A-B), our mission was to engineer the \"Come-Back of the century\" for BlackBerry — a historic smartphone brand whose revenue has fallen 40% since 2021. The goal: build a full communication strategy dossier that diagnoses the brand, rethinks its positioning, and rebrands it for the AI & 5G era.",
+    bb_role_title: "My Role: Communication & Media",
+    bb_role_desc: "I orchestrated the Communication & Media angle — the launch communication plan, channel strategy, social media and press relations — alongside Hersyn-Jéhu (Art Direction) and Lina (Strategy & Copy). Together we fused technological heritage with a forward-looking vision to reinvent an icon of mobility.",
+    bb_deliverables_title: "Key Deliverables",
+    bb_deliverable_diag: "Diagnostic — PESTEL & SWOT",
+    bb_deliverable_copy: "Two-phase Copy Strategy",
+    bb_deliverable_rebrand: "Rebranding — logo & brand guidelines",
+    bb_deliverable_campaign: "Multichannel launch campaign",
+    bb_strategy_title: "Design & Communication Strategy",
+    bb_strategy_desc: "We selected \"BlackBerry Reborn\": a geometric logo of 7 interconnected points evoking both the berry and a secure data network, pairing deep black (#1A1A2E) with an accent red (#E94560). The communication plays on positive nostalgia (\"you remember?\") while projecting the brand into a credible tech modernity around its new flagship, the Passport 2 5G AI.",
+    bb_view_doc: "View the Strategy Dossier ↗"
   },
   fr: {
     nav_about: "À Propos",
@@ -327,7 +340,20 @@ const translations = {
     comp_ent_break: "Seuil de rentabilité",
     comp_entreprendre_result_title: "Ce que j'ai Appris",
     comp_entreprendre_result_desc: "Savoir gérer un projet, c'est aussi savoir communiquer clairement. Entreprendre, c'est transformer sa vision en réalité, étape par étape.",
-    comp_ent_view_doc: "Voir le Document de Cadrage ↗"
+    comp_ent_view_doc: "Voir le Document de Cadrage ↗",
+    bb_section_title: "Le Projet BlackBerry — Le Come-Back du siècle",
+    bb_context_title: "Contexte & Objectif",
+    bb_context_desc: "En trinôme de création (MMI A-B), notre mission était d'orchestrer le « Come-Back du siècle » pour BlackBerry — une marque historique du smartphone dont le chiffre d'affaires a chuté de 40 % depuis 2021. L'objectif : bâtir un dossier de stratégie de communication complet, qui établit le diagnostic de la marque, repense son positionnement et la rebrande pour l'ère de l'IA et de la 5G.",
+    bb_role_title: "Mon Rôle : Communication & Médias",
+    bb_role_desc: "J'ai orchestré le volet Communication & Médias — le plan de communication de lancement, la stratégie de canaux, les réseaux sociaux et les relations presse — aux côtés de Hersyn-Jéhu (Direction Artistique) et Lina (Stratégie & Copy). Ensemble, nous avons fusionné héritage technologique et vision d'avenir pour réinventer une icône de la mobilité.",
+    bb_deliverables_title: "Livrables Clés",
+    bb_deliverable_diag: "Diagnostic — PESTEL & SWOT",
+    bb_deliverable_copy: "Copy Strategy en deux phases",
+    bb_deliverable_rebrand: "Rebranding — logo & charte graphique",
+    bb_deliverable_campaign: "Campagne de lancement multicanale",
+    bb_strategy_title: "Stratégie de Design & de Communication",
+    bb_strategy_desc: "Nous avons retenu « BlackBerry Reborn » : un logo géométrique de 7 points interconnectés évoquant à la fois la mûre et un réseau de données sécurisé, associant le noir profond (#1A1A2E) à un rouge accentué (#E94560). La communication joue sur la nostalgie positive (« vous vous souvenez ? ») tout en projetant la marque dans une modernité technologique crédible autour de son nouveau produit phare, le Passport 2 5G IA.",
+    bb_view_doc: "Voir le Dossier de Stratégie ↗"
   },
   nl: {
     nav_about: "Over Mij",
@@ -492,6 +518,19 @@ const translations = {
     comp_ent_break: "Break-evenanalyse",
     comp_entreprendre_result_title: "Wat ik Leerde",
     comp_entreprendre_result_desc: "Projectbeheer betekent ook helder communiceren. Ondernemen is je visie stap voor stap omzetten in werkelijkheid.",
-    comp_ent_view_doc: "Scopingdocument Bekijken ↗"
+    comp_ent_view_doc: "Scopingdocument Bekijken ↗",
+    bb_section_title: "Het BlackBerry-project — Strategische Comeback",
+    bb_context_title: "Context & Doelstelling",
+    bb_context_desc: "Werkend in een creatietrio (MMI A-B) was onze missie om de \"Comeback van de eeuw\" voor BlackBerry te bewerkstelligen — een historisch smartphonemerk waarvan de omzet sinds 2021 met 40% is gedaald. Het doel: een volledig communicatiestrategie-dossier opstellen dat het merk diagnosticeert, de positionering herdenkt en het herbrandt voor het tijdperk van AI & 5G.",
+    bb_role_title: "Mijn Rol: Communicatie & Media",
+    bb_role_desc: "Ik orkestreerde het Communicatie & Media-luik — het lanceringscommunicatieplan, de kanaalstrategie, sociale media en persrelaties — samen met Hersyn-Jéhu (Art Direction) en Lina (Strategie & Copy). Samen versmolten we technologisch erfgoed met een toekomstgerichte visie om een icoon van mobiliteit opnieuw uit te vinden.",
+    bb_deliverables_title: "Belangrijkste Opleveringen",
+    bb_deliverable_diag: "Diagnose — PESTEL & SWOT",
+    bb_deliverable_copy: "Copy Strategy in twee fasen",
+    bb_deliverable_rebrand: "Rebranding — logo & huisstijl",
+    bb_deliverable_campaign: "Multichannel lanceringscampagne",
+    bb_strategy_title: "Design- & Communicatiestrategie",
+    bb_strategy_desc: "We kozen voor \"BlackBerry Reborn\": een geometrisch logo van 7 onderling verbonden punten die zowel de bes als een beveiligd datanetwerk oproepen, met diep zwart (#1A1A2E) gecombineerd met een accentrood (#E94560). De communicatie speelt in op positieve nostalgie (\"weet je nog?\") en projecteert het merk tegelijk in een geloofwaardige technologische moderniteit rond zijn nieuwe vlaggenschip, de Passport 2 5G AI.",
+    bb_view_doc: "Bekijk het Strategiedossier ↗"
   }
 };
