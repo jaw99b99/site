@@ -691,7 +691,7 @@ const translations = {
     comp_exprimer_film_desc: "Voor dit 12-uur korte filmproject regisseerde ik het team, beheerde ik de technische productie en monteerde ik de eindfilm.",
     comp_exprimer_photo_title: "Fotografie & Visueel Ontwerp",
     comp_exprimer_photo_desc: "Ik ontwierp een promotieposter voor de imaginaire 'MAHA'-site voor een tijdelijke tentoonstelling over oude kunst. Ik beoefen ook fotografie.",
-    comp_ac_title": "Kritieke Leerdoelen",
+    comp_ac_title: "Kritieke Leerdoelen",
     ac_13_01: "Schrijven voor digitale media",
     ac_13_02: "Grafische concepten en moodboards produceren",
     ac_13_03: "Beelden creëren, samenstellen en bewerken",
