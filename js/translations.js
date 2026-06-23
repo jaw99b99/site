@@ -426,7 +426,7 @@ const translations = {
     comp_exprimer_film_desc: "Pour ce projet de court métrage de 12 heures, j'ai dirigé l'équipe, géré la production technique et monté le film final.",
     comp_exprimer_photo_title: "Photographie & Design Visuel",
     comp_exprimer_photo_desc: "J'ai conçu une affiche promotionnelle pour le site imaginaire 'MAHA' pour une exposition temporaire sur l'art antique. Je pratique également la photographie.",
-    comp_ac_title": "Apprentissages Critiques",
+    comp_ac_title: "Apprentissages Critiques",
     ac_13_01: "Écrire pour les médias numériques",
     ac_13_02: "Produire des pistes graphiques et des planches d'inspiration",
     ac_13_03: "Créer, composer et retoucher des visuels",
