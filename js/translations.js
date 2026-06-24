@@ -367,7 +367,7 @@ const translations = {
     mmi_card_entreprendre_title: "Entreprendre",
     mmi_card_entreprendre_desc: "Piloter un projet de bout en bout : cadrage, planning, budget et coordination des ressources et des équipes.",
     comp_back_mmi: "← Retour au Portfolio MMI",
-    comp_approach_title: "Mes travaux",
+    comp_approach_title: "Mes travaux:",
     comp_comprendre_title1: "Compétence",
     comp_comprendre_title2: "Comprendre",
     comp_comprendre_intro: "Le socle de tout projet numérique : analyser l'environnement, comprendre les besoins des utilisateurs et décrypter les stratégies de communication existantes.",
